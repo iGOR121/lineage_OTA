@@ -1,5 +1,5 @@
 {% assign device = site.data.devices[page.codename] %}
-[Home]({{ "/" | relative_url }})
+[Home]({{ "/lineage_OTA/" | relative_url }})
 
 # {{ page.title }} ({{ page.codename }})
 

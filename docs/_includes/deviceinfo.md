@@ -1,9 +1,9 @@
 {% assign device = site.data.devices[page.codename] %}
-[Home]({{ "/" | relative_url }})
+[Home]({{ "/lineage_OTA/" | relative_url }})
 
 # {{ page.title }} ({{ page.codename }})
 
-[Changelog]({{ "/changes/" | append: page.codename | append: ".html" | relative_url }})  
+[Changelog]({{ "/lineage_OTA/changes/" | append: page.codename | append: ".html" | relative_url }})  
 {% assign ota_url = site.lineage_ota_base_url | append: page.codename | append: ".json" %}
 {% fetch builds_raw ota_url %}
 {% json builds builds_raw %}
@@ -21,7 +21,7 @@
 <table>
     <tbody>
         <tr>
-            <td align="left" colspan="2"><img src="{{ "/images/" | append: page.codename | append: ".png" | relative_url}}" style="max-height: 500px"></td>
+            <td align="left" colspan="2"><img src="{{ "/lineage_OTA/images/" | append: page.codename | append: ".png" | relative_url}}" style="max-height: 500px"></td>
         </tr>
         <tr>
             <td align="left">Chipset</td>
