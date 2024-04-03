@@ -8,7 +8,7 @@ fi
 ZIP="$1"
 FILENAME=$(basename $ZIP)
 BUILDDIR=$(dirname $ZIP)
-SCRIPTDIR=$(dirname $0)
+SCRIPTDIR=/home/igor/lineage_OTA/scripts/
 REPODIR=$(dirname $SCRIPTDIR)
 TMPDIR="/tmp"
 DEVICE=$(echo $FILENAME | rev | cut -f1 -d '-' | rev | cut -f1 -d '.')
@@ -16,7 +16,7 @@ DATE=$(echo $FILENAME | cut -f3 -d '-')
 RECOVERY_NAME=$(echo $FILENAME | sed 's/UNOFFICIAL/recovery/g' | sed 's/\.zip/.img/g')
 RELEASENAME="$DEVICE-$DATE"
 
-$SCRIPTDIR/otainfo.sh $ZIP $(hub -C $REPODIR browse -u) $RELEASENAME > $REPODIR/$DEVICE.json
+$SCRIPTDIR/otainfo.sh $ZIP $(hub -C $REPODIR browse -u igor121/lineage_OTA) $RELEASENAME > $REPODIR/$DEVICE.json
 cp $BUILDDIR/recovery.img $TMPDIR/$RECOVERY_NAME
 cp $ZIP $TMPDIR/$FILENAME
 echo "$(sha256sum $TMPDIR/$FILENAME | cut -f1 -d ' ') $FILENAME" > $TMPDIR/$FILENAME.sha256
