@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1712077422",
-      "filename": "leaf-3.2-20240403-UNOFFICIAL-VANILLA-toco.zip",
-      "id": "ed0ca4ef6656de5903ca418bcd937231fef8db8237f2105594803d1d1e791517",
+      "datetime": "1712156230",
+      "filename": "leaf-3.2-20240402-UNOFFICIAL-VANILLA-toco.zip",
+      "id": "71b2f7bfa941e3a25b798074a3388fb1cd38bd6fba9de1b4a939c72c93c2fbf2",
       "romtype": "UNOFFICIAL",
-      "size": "1163630747",
-      "url": "https://github.com/igor121/lineage_OTA/releases/download/toco-20240403/leaf-3.2-20240403-UNOFFICIAL-VANILLA-toco.zip",
+      "size": "1163470324",
+      "url": "https://github.com/igor121/lineage_OTA/releases/download/toco-20240402/leaf-3.2-20240402-UNOFFICIAL-VANILLA-toco.zip",
       "version": "3.2"
     }
   ]
